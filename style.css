@@ -1,0 +1,113 @@
+* {
+    font-size: 18px;
+}
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+#main {
+    width: 1440px;
+    margin: 0 auto;
+}
+#card {
+    width: 350px;
+    height: 600px;
+    background-color: hsl(216, 50%, 16%);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 10px hsl(217, 62%, 8%)
+}
+#img1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+.hover-img {
+    position: relative;
+}
+.hover-img div {
+    position: absolute;
+    background-color: hsl(178, 100%, 50%);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.hover-img div:hover {
+    opacity: 1;
+    border-radius: 10px;
+}
+.hover-img div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+hr {
+    border: 1px solid hsl(215, 32%, 27%);
+}
+.txt1 {
+    color: hsl(0, 0%, 100%);
+}
+.p1,.days-text,.txt2 {
+    color: hsl(215, 51%, 70%);
+}
+.price-text {
+    color: hsl(178, 100%, 50%);
+}
+.txt1,.txt2,.txt3,#creator {
+    font-family: 'Outfit', sans-serif;
+}
+#center {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+}
+#txt2 {
+    font-size: 15px;
+}
+#avator {
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+.days-and-price {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+.price,.days {
+    display: flex;
+}
+.days-text,.price-text {
+    margin-left: 5px;
+}
+.avator-text {
+    display: flex;
+    align-items: center;
+}
+#creator {
+    margin-left: 10px;
+}
+.outer {
+    padding-top: 180px;
+}
+#img1,.txt1,#creator {
+    cursor: pointer;
+}
+.txt1:hover  {
+    color: hsl(178, 100%, 50%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+    color: hsl(228, 45%, 44%); 
+    padding-top: 50px;   
+}
+@media screen and(max-width:375px) {
+    #main {width: 100%;}
+    #card {width: 50%}
+}
